@@ -1,0 +1,149 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background-color: #f4f4f4;
+color: #333;
+}
+
+/* Home Section */
+.home {
+background-image: url('https://img.freepik.com/premium-photo/white-coffee-cup-roasted-coffee-beans-around_35570-794.jpg');
+background-size: cover;
+background-position: center;
+color: rgb(0, 0, 0);
+padding: 80px 0;
+text-align: center;
+}
+
+
+.home-content h1 {
+font-size: 3em;
+margin-bottom: 10px;
+}
+
+.home-content p {
+font-style: italic;
+font-size: 1.2em;
+}
+
+/* Navigation */
+nav {
+background-color: #3f2003;
+}
+
+.nav-links {
+display: flex;
+justify-content: center;
+padding: 15px 0;
+list-style-type: none;
+}
+
+.nav-links li {
+margin: 0 20px;
+}
+
+.nav-links a {
+color: white;
+text-decoration: none;
+font-size: 1.2em;
+transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+color: #ff6347;
+}
+
+/* Menu Section */
+.section {
+padding: 40px 20px;
+text-align: center;
+}
+
+#menu {
+background-color: #ffffff;
+}
+
+h2 {
+font-size: 2.5em;
+margin-bottom: 20px;
+color: #6b4808;
+}
+
+.menu-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+justify-items: center;
+}
+
+.menu {
+background-color: #f8f8f8;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+width: 100%;
+max-width: 200px;
+text-align: center;
+}
+
+.menu h3 {
+font-size: 1.6em;
+margin-bottom: 10px;
+color: #5e1414;
+}
+
+.menu p {
+font-size: 1.2em;
+color: #555;
+}
+
+/* Services Section */
+.section {
+padding: 40px 20px;
+text-align: center;
+}
+
+#services {
+background-color: #ffffff;
+}
+
+h2 {
+font-size: 2.5em;
+margin-bottom: 20px;
+color: #6b4808;
+}
+
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+justify-items: center;
+}
+
+.services {
+background-color: #f8f8f8;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+width: 100%;
+max-width: 200px;
+text-align: center;
+}
+
+.services h3 {
+font-size: 1.6em;
+margin-bottom: 10px;
+color: #5e1414;
+}
+
+.services p {
+font-size: 1.2em;
+color: #555;
+}
