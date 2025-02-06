@@ -76,13 +76,15 @@ body {
 }
 
 /* Navigation */
+
 nav {
     background-color: #3f2003;
     position: fixed;
-    width: 100%;
     top: 0;
+    width: 100%;
     z-index: 1000;
 }
+
 
 .nav-links {
     display: flex;
@@ -104,6 +106,45 @@ nav {
 
 .nav-links a:hover {
     color: #ff6347;
+}
+
+/* About Us Section */
+#about {
+    background-color: #fff8f0; /* Soft beige background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #6b4808;
+}
+
+.about-container p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.about-content img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Menu Section */
@@ -163,6 +204,13 @@ h2 {
 /* Individual menu item */
 .menu-item {
     text-align: center;
+    position: relative;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Gives a 3D hover effect */
+    transition: all 0.3s ease-in-out;
 }
 
 .menu-item img {
@@ -173,11 +221,26 @@ h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.menu-item p {
+/* Menu Name */
+.menu-name {
     margin-top: 10px;
     font-size: 1.2em;
     font-weight: bold;
     color: #333;
+}
+
+/* Price (hidden by default) */
+.price {
+    display: none;
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Display price on hover */
+.menu-item:hover .price {
+    display: block;
 }
 
 /* Services Section */
@@ -203,24 +266,47 @@ h2 {
 
 /* Service Item */
 .service-item {
+    text-align: center;
+    position: relative; /* Added for positioning span */
     width: 30%;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
+.service-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Gives a 3D hover effect */
+    transition: all 0.3s ease-in-out;
+}
+/* Service Item Image */
 .service-item img {
-    width: 100%;
+    width: 150px;
     height: auto;
     border-radius: 10px;
+    object-fit: cover;
 }
 
+/* Service Item Title */
 .service-item p {
     font-size: 1.2em;
     color: #333;
     margin-top: 10px;
+}
+
+/* Lighter background color */
+.service-info {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.6); /* Lighter transparent white */
+    color: #333; /* Dark text for contrast */
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+/* Show info on hover */
+.service-item:hover .service-info {
+    display: block;
 }
 
 /* Contact Section */
@@ -310,6 +396,18 @@ h2 {
         padding: 10px 20px;
     }
 
+    /* About Section */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
     /* Menu Section */
     #menu h2 {
         font-size: 2em;
@@ -323,7 +421,7 @@ h2 {
     .menu-items {
         grid-template-columns: 1fr; /* Stack menu items in a single column */
     }
-
+    
     /* Services Section */
     .services-grid {
         flex-direction: column;
