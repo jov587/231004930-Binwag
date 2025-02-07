@@ -53,7 +53,7 @@ body {
 
 /* Hover Effect */
 .cta-button:hover {
-    background-color: #b9690e; /* Lighter Brown #5f3505 */
+    background-color: #b36a16; /* Lighter Brown #5f3505 */
     transform: scale(1.05);
 }
 
