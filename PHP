@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CC14 PHP</title>
+</head>
+<body>
+    <?php
+        echo "<h1>Exercise 1</h1>";
+        $a = 15;
+        $b = 7;
+        $sum = $a + $b;
+        $dif = $a - $b;
+        $prod = $a * $b;
+        $quot = $a / $b;
+
+        echo "<ul>";
+        echo "<li> Sum:" .$sum;
+        echo "<li> Difference:" .$dif;
+        echo "<li> Product:" .$prod;
+        echo "<li> Quotient:" .$quot;
+    ?>
+
+    <?php
+        echo "<h1>Exercise 2</h1>";
+        $number = 1;
+        if ($number % 2 == 0 ) {
+            echo "$number. is an Even Number";
+        }else {
+            echo "$number. is an Odd Number";
+        }
+
+        if ($number > 0) {
+            echo "$number. is a Positive Integer";
+        } elseif ($number < 0) {
+            echo "$number. is a Negative Integer";
+        }else {
+            echo "$number. is zero";
+        }
+    ?>
+
+    <?php
+        echo "<h1>Exercise 3 </h1>";
+        $i = 1;
+        while ($i <= 100) {
+            $i++;
+            if ($i )
+        }
+    ?>
+</body>
+</html>
