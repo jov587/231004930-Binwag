@@ -69,6 +69,25 @@
 
     echo "<h1>Exercise 4 </h1>" . "<br>";
     
-    ?>
+    echo"<p><strong>Greeting Message </strong></p>"."<br>";
+
+    $name = "Joverlyn"
+
+    function greet($name){
+        return "Hello,$name! Welcome!";
+}
+    echo greet($name);
+    echo greet("Dawn");
+
+    echo"<p><strong>Square of a Number</strong></p>"."<br>";
+
+    function square($number) {
+        return $number * $number;
+    }
+
+    //example
+    echo "The square of 5 is: ".square(5);
+?>
+
 </body>
 </html>
