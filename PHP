@@ -37,14 +37,38 @@
             echo "$number. is zero";
         }
     ?>
-
-    <?php
-        echo "<h1>Exercise 3 </h1>";
-        $i = 1;
-        while ($i <= 100) {
-            $i++;
-            if ($i )
+        <?php
+        echo "<h1>Exercise 3 </h1>" . "<br>";
+        for ($i = 1; $i <=100;$i++) {
+            if ($i % 3 == 0 && $i % 5 == 0){
+                echo "FizzBuzz";
+            }elseif ($i % 3 == 0){
+                echo "Fizz";
+            }elseif ($i % 5 == 0){
+                echo "Buzz";
+            }else {
+                echo "$i";
+            }
         }
+
+        echo "<p><strong>Fibonacci sequence</strong></p>".<br>;
+
+        $first = 0;
+        $second = 1;
+
+        for ($i = 1; $i <= 10;$i++) {
+            $next = $first + $second;
+
+            if($next % 2 == 0) {
+                echo "$next";
+            }
+
+        $first = $second;
+        $second = $next;
+    }
+
+    echo "<h1>Exercise 4 </h1>" . "<br>";
+    
     ?>
 </body>
 </html>
